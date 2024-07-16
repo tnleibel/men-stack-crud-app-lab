@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Movie</title>
+    <a href="/movies/">Back to Movies</a>
+</head>
+<body>
+    <h1>Here you can add a new movie to the Database!</h1>
+    <form action="/movies" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="director">Director:</label>
+        <input type="text" name="director" id="director" />
+
+        <label for="releaseYear">Release Year:</label>
+        <input type="text" name="releaseYear" id="releaseYear" />
+
+        <button type="submit">Add Movie</button>
+    </form>
+</body>
+</html>

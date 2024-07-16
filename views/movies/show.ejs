@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= movie.name %></title>
+    <a href="/movies/">Back to Movies</a>
+    <a href="/">Go Home</a>
+</head>
+<body>
+    <h1><%= movie.name %></h1>
+    <h2>Directed by <%= movie.director %></h2>
+    <h2>Released in <%= movie.releaseYear %></h2>
+    <a href="/movies/<%= movie._id %>/edit">Edit <%= movie.name %></a>
+    <form action="/movies/<%= movie._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= movie.name %></button>
+    </form>
+</body>
+</html>
